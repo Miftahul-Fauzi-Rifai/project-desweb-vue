@@ -120,9 +120,15 @@
 
           <!-- Map -->
           <div class="mt-8 rounded-lg overflow-hidden shadow-lg">
-            <div class="bg-gray-200 h-64 flex items-center justify-center">
-              <p class="text-gray-txt">Map placeholder (embed Google Maps here)</p>
-            </div>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1606.3943581000374!2d116.88102996962688!3d-1.250660163799775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1763087729827!5m2!1sid!2sid"
+              width="100%" 
+              height="350" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
