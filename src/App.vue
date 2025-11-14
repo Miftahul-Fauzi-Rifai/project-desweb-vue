@@ -1,33 +1,18 @@
 <template>
-  <div id="app">
-    <!-- Jika belum login, tampilkan form login -->
-    <UserLogin v-if="!isLoggedIn" @loginSuccess="isLoggedIn = true" />
-    
-    <!-- Jika sudah login, tampilkan dashboard -->
-    <UserDashboard v-else @logout="isLoggedIn = false" />
+  <div id="app" class="min-h-screen flex flex-col">
+    <NavBar />
+    <main class="flex-grow">
+      <RouterView />
+    </main>
+    <Footer />
   </div>
 </template>
 
-<script>
-import UserLogin from './components/UserLogin.vue';        
-import UserDashboard from './components/UserDashboard.vue'; 
-
-export default {
-  name: 'App',
-  components: {
-    UserLogin,     // Panggil components yang akan digunakan
-    UserDashboard
-  },
-  data() {
-    return {
-      isLoggedIn: false
-    };
-  }
-};
+<script setup>
+import NavBar from './components/Common/NavBar.vue'
+import Footer from './components/Common/Footer.vue'
 </script>
 
 <style>
-body {
-  font-family: Arial, sans-serif;
-}
+/* Global styles can be added here if needed */
 </style>
