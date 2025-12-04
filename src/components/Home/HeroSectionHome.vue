@@ -9,7 +9,7 @@
           <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
             <h2 class="text-4xl md:text-6xl font-bold mb-4">Mountain Bikes</h2>
             <p class="text-lg md:text-2xl mb-6">Conquer any terrain with our premium mountain bikes</p>
-            <a href="#" class="bg-primary hover:bg-opacity-90 text-white font-semibold px-8 py-3 rounded-full transition">Shop Now</a>
+            <router-link to="/bikes/mountain-bikes" class="bg-primary hover:bg-opacity-90 text-white font-semibold px-8 py-3 rounded-full transition">Shop Now</router-link>
           </div>
         </div>
         
@@ -20,7 +20,7 @@
           <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
             <h2 class="text-4xl md:text-6xl font-bold mb-4">Road Bikes</h2>
             <p class="text-lg md:text-2xl mb-6">Speed and performance for the ultimate ride</p>
-            <a href="#" class="bg-white hover:bg-opacity-90 text-gray-dark font-semibold px-8 py-3 rounded-full transition">Explore Collection</a>
+            <router-link to="/bikes/road-bikes" class="bg-white hover:bg-opacity-90 text-gray-dark font-semibold px-8 py-3 rounded-full transition">Explore Collection</router-link>
           </div>
         </div>
         
@@ -31,7 +31,7 @@
           <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4">
             <h2 class="text-4xl md:text-6xl font-bold mb-4">Folding Bikes</h2>
             <p class="text-lg md:text-2xl mb-6">Compact and portable bikes for urban commuting</p>
-            <a href="#" class="bg-primary hover:bg-opacity-90 text-white font-semibold px-8 py-3 rounded-full transition">Shop Folding Bikes</a>
+            <router-link to="/bikes/folding-bikes" class="bg-primary hover:bg-opacity-90 text-white font-semibold px-8 py-3 rounded-full transition">Shop Folding Bikes</router-link>
           </div>
         </div>
       </div>

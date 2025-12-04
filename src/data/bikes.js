@@ -1,0 +1,9 @@
+export const bikesData = [
+  { id: 1, name: 'Trail Blazer X1', category: 'mountain-bikes', categoryName: 'Mountain', price: 2500, oldPrice: 2800, image: '/images/main-slider/5.jpg', description: 'Full suspension mountain bike ready for the roughest trails. Equipped with high-end suspension and durable tires.' },
+  { id: 2, name: 'Alpine Peak 5', category: 'mountain-bikes', categoryName: 'Mountain', price: 1800, image: '/images/products/1.jpg', description: 'Hardtail MTB perfect for cross-country adventures. Lightweight aluminum frame with responsive handling.' },
+  { id: 3, name: 'Speedster Carbon', category: 'road-bikes', categoryName: 'Road', price: 3200, image: '/images/main-slider/2.jpg', description: 'Lightweight carbon frame for maximum speed on asphalt. Aerodynamic design for professional racers.' },
+  { id: 4, name: 'Roubaix Endurance', category: 'road-bikes', categoryName: 'Road', price: 4500, oldPrice: 5000, image: '/images/products/2.jpg', description: 'Designed for comfort on long-distance rides. Features shock absorption technology.' },
+  { id: 5, name: 'City Volt E-1', category: 'electric-bikes', categoryName: 'Electric', price: 2100, image: '/images/cat-image1.jpg', description: 'Commute effortlessly with this powerful e-bike. Long-lasting battery and pedal assist.' },
+  { id: 6, name: 'Brompton C Line', category: 'folding-bikes', categoryName: 'Folding', price: 1600, image: '/images/main-slider/4.jpg', description: 'The classic folding bike, perfect for city living. Folds in seconds to fit under your desk.' },
+  { id: 7, name: 'Urban Fold Pro', category: 'folding-bikes', categoryName: 'Folding', price: 850, oldPrice: 950, image: '/images/main-slider/4.jpg', description: 'Compact, lightweight, and easy to carry anywhere. Great value for urban commuters.' },
+]

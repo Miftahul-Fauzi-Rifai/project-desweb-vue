@@ -9,6 +9,6 @@
 </template>
 
 <script setup>
-import HeroSection from '../components/Contact/HeroSection.vue'
+import HeroSection from '../components/Contact/HeroSectionContact.vue'
 import InfoMaps from '../components/Contact/InfoMaps.vue'
 </script>

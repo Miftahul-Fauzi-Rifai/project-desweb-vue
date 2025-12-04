@@ -2,42 +2,38 @@
   <section class="py-16 bg-gray-50">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Category 1 -->
+        
         <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer h-64">
           <img src="/images/cat-image1.jpg" alt="Bikes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
           <div class="absolute inset-0 bg-black bg-opacity-40"></div>
           <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
             <h2 class="text-3xl font-bold mb-4">Bikes</h2>
-            <a href="#" class="bg-primary hover:bg-white hover:text-primary border border-white text-white font-semibold px-6 py-2 rounded-full transition">Shop Now</a>
+            <router-link to="/bikes" class="bg-primary hover:bg-white hover:text-primary border border-white text-white font-semibold px-6 py-2 rounded-full transition">Shop Now</router-link>
           </div>
         </div>
 
-        <!-- Category 2 -->
         <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer h-64">
-          <img src="/images/cat-image4.jpg" alt="Apparel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+          <img src="/images/cat-image4.jpg" alt="Clothing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
           <div class="absolute inset-0 bg-black bg-opacity-40"></div>
           <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
-            <h2 class="text-3xl font-bold mb-4">Cycling Apparel</h2>
-            <a href="#" class="bg-primary hover:bg-white hover:text-primary border border-white text-white font-semibold px-6 py-2 rounded-full transition">Shop Now</a>
+            <h2 class="text-3xl font-bold mb-4">Cycling Clothing</h2>
+            <router-link to="/clothing" class="bg-primary hover:bg-white hover:text-primary border border-white text-white font-semibold px-6 py-2 rounded-full transition">Shop Now</router-link>
           </div>
         </div>
 
-        <!-- Category 3 -->
         <div class="relative overflow-hidden rounded-lg shadow-lg group cursor-pointer h-64">
           <img src="/images/cat-image5.jpg" alt="Gear" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
           <div class="absolute inset-0 bg-black bg-opacity-40"></div>
           <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
             <h2 class="text-3xl font-bold mb-4">Cycling Gear</h2>
-            <a href="#" class="bg-primary hover:bg-white hover:text-primary border border-white text-white font-semibold px-6 py-2 rounded-full transition">Shop Now</a>
+            <router-link to="/accessories" class="bg-primary hover:bg-white hover:text-primary border border-white text-white font-semibold px-6 py-2 rounded-full transition">Shop Now</router-link>
           </div>
         </div>
       </div>
 
-      <!-- Popular Products -->
       <div class="mt-16">
         <h2 class="text-3xl font-bold mb-8 text-center">Popular Products</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <!-- Product 1 -->
           <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
             <img src="/images/products/1.jpg" alt="Specialized Turbo Levo SL" class="w-full h-64 object-cover">
             <div class="p-4">
@@ -47,11 +43,10 @@
                 <span class="text-xl font-bold text-primary">$8,500</span>
                 <span class="text-sm line-through text-gray-txt ml-2">$9,200</span>
               </div>
-              <button class="w-full bg-primary hover:bg-transparent hover:border-primary border border-transparent text-white hover:text-primary font-semibold py-2 px-4 rounded-full transition">Add to Cart</button>
+              <button @click="addToCart(popularProducts[0])" class="w-full bg-primary hover:bg-transparent hover:border-primary border border-transparent text-white hover:text-primary font-semibold py-2 px-4 rounded-full transition">Add to Cart</button>
             </div>
           </div>
 
-          <!-- Product 2 -->
           <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
             <img src="/images/products/2.jpg" alt="Specialized Roubaix Expert" class="w-full h-64 object-cover">
             <div class="p-4">
@@ -61,11 +56,10 @@
                 <span class="text-xl font-bold text-primary">$6,500</span>
                 <span class="text-sm line-through text-gray-txt ml-2">$7,000</span>
               </div>
-              <button class="w-full bg-primary hover:bg-transparent hover:border-primary border border-transparent text-white hover:text-primary font-semibold py-2 px-4 rounded-full transition">Add to Cart</button>
+              <button @click="addToCart(popularProducts[1])" class="w-full bg-primary hover:bg-transparent hover:border-primary border border-transparent text-white hover:text-primary font-semibold py-2 px-4 rounded-full transition">Add to Cart</button>
             </div>
           </div>
 
-          <!-- Product 3 -->
           <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
             <img src="/images/products/3.jpg" alt="S-Works Prevail 3 Helmet" class="w-full h-64 object-cover">
             <div class="p-4">
@@ -75,11 +69,10 @@
                 <span class="text-xl font-bold text-primary">$275</span>
                 <span class="text-sm line-through text-gray-txt ml-2">$325</span>
               </div>
-              <button class="w-full bg-primary hover:bg-transparent hover:border-primary border border-transparent text-white hover:text-primary font-semibold py-2 px-4 rounded-full transition">Add to Cart</button>
+              <button @click="addToCart(popularProducts[2])" class="w-full bg-primary hover:bg-transparent hover:border-primary border border-transparent text-white hover:text-primary font-semibold py-2 px-4 rounded-full transition">Add to Cart</button>
             </div>
           </div>
 
-          <!-- Product 4 -->
           <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition">
             <img src="/images/products/4.jpg" alt="Men's Prime Jersey" class="w-full h-64 object-cover">
             <div class="p-4">
@@ -89,13 +82,12 @@
                 <span class="text-xl font-bold text-primary">$90</span>
                 <span class="text-sm line-through text-gray-txt ml-2">$120</span>
               </div>
-              <button class="w-full bg-primary hover:bg-transparent hover:border-primary border border-transparent text-white hover:text-primary font-semibold py-2 px-4 rounded-full transition">Add to Cart</button>
+              <button @click="addToCart(popularProducts[3])" class="w-full bg-primary hover:bg-transparent hover:border-primary border border-transparent text-white hover:text-primary font-semibold py-2 px-4 rounded-full transition">Add to Cart</button>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Brands Section -->
       <div class="mt-16">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">Our <span class="text-primary">Top Brands</span></h2>
@@ -126,3 +118,27 @@
     </div>
   </section>
 </template>
+
+<script setup>
+const popularProducts = [
+  { id: 1001, name: 'Turbo Levo SL Comp Carbon', category: 'electric-bikes', categoryName: 'Electric', price: 8500, oldPrice: 9200, image: '/images/products/1.jpg', description: 'Electric Mountain Bike' },
+  { id: 1002, name: 'Roubaix Expert (2026)', category: 'road-bikes', categoryName: 'Road', price: 6500, oldPrice: 7000, image: '/images/products/2.jpg', description: 'Endurance Road Bike' },
+  { id: 101, name: 'S-Works Prevail 3', category: 'helmets', categoryName: 'Helmet', price: 275, oldPrice: 325, image: '/images/products/3.jpg', description: 'Road Bike Helmet' },
+  { id: 201, name: "Men's Prime Short Sleeve Jersey", category: 'jerseys', categoryName: 'Jersey', price: 90, oldPrice: 120, image: '/images/products/4.jpg', description: 'Road Bike Jerseys' }
+]
+
+const addToCart = (product) => {
+  let cart = JSON.parse(localStorage.getItem('cart')) || []
+  const existingItem = cart.find(item => item.id === product.id)
+  
+  if (existingItem) {
+    existingItem.quantity += 1
+  } else {
+    cart.push({ ...product, quantity: 1 })
+  }
+  
+  localStorage.setItem('cart', JSON.stringify(cart))
+  window.dispatchEvent(new Event('cart-updated'))
+  alert(`${product.name} added to cart!`)
+}
+</script>
