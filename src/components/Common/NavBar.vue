@@ -22,6 +22,10 @@
           <i class="fas fa-user text-xl"></i>
         </router-link>
 
+        <router-link to="/tentangsaya" class="text-white hover:text-secondary">
+          <i class="fas fa-user text-xl"></i>
+        </router-link>
+
         <button @click="mobileMenuOpen = !mobileMenuOpen" class="text-white focus:outline-none">
           <svg v-if="!mobileMenuOpen" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -47,7 +51,7 @@
               <li><router-link to="/bikes/folding-bikes" class="block px-4 py-2 hover:bg-primary hover:text-white rounded">Folding Bikes</router-link></li>
             </ul>
           </li>
-
+          
           <li class="relative group">
             <router-link to="/accessories" class="hover:text-secondary font-semibold flex items-center">
               Accessories <i class="fas fa-chevron-down ml-1 text-xs group-hover:rotate-180 transition-transform"></i>
@@ -118,6 +122,10 @@
         <router-link to="/user" class="text-white hover:text-secondary transition">
           <i class="fas fa-user text-lg"></i>
         </router-link>
+
+        <router-link to="/tentangsaya" class="text-white hover:text-secondary transition">
+          <i class="fas fa-user text-lg"></i>
+        </router-link>
       </div>
     </div>
 
@@ -129,7 +137,7 @@
             Home
           </router-link>
         </li>
-
+        
         <li>
           <div class="flex justify-between items-center border-b border-gray-700 py-2">
             <router-link to="/bikes" class="flex-grow hover:text-secondary" @click="mobileMenuOpen = false">Bikes</router-link>
@@ -182,6 +190,10 @@
         <li>
           <router-link to="/user" class="block py-2 hover:text-secondary" @click="mobileMenuOpen = false">
             My Profile
+          </router-link>
+
+          <router-link to="/tentangsaya" class="block py-2 hover:text-secondary" @click="mobileMenuOpen = false">
+            Tentang Saya
           </router-link>
         </li>
 

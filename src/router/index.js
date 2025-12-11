@@ -7,6 +7,7 @@ import ClothingView from '../views/ClothingView.vue'
 import CartView from '../views/CartView.vue'
 import UserView from '../views/UserView.vue'
 import SearchView from '../views/SearchView.vue'
+import SearchView from '../views/Tentangsaya.View.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -53,6 +54,11 @@ const router = createRouter({
       path: '/search',
       name: 'search',
       component: SearchView
+    },
+    {
+      path: '/tentangsaya',
+      name: 'tentangsaya',
+      component: TentangsayaView
     }
   ],
 })
