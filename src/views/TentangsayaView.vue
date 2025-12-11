@@ -7,5 +7,5 @@
 
 <script setup>
 import Tentangsaya from '../components/tentangsaya/tentangsaya.vue';
-import Catalogtentang from '../components/tentangsaya/catalogtentangsaya.vue'; 
+import Catalogtentang from '../components/tentangsaya/catalogtentang.vue'; 
 </script>   
